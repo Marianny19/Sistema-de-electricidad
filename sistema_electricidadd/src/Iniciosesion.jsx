@@ -6,7 +6,6 @@ function Iniciosesion() {
   return (
     <>
    
-   
     <div className="foto_inicial">
       <div className="contenedor">
       <div className='logo'>
