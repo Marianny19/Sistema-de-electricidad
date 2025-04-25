@@ -1,21 +1,34 @@
 import React from 'react'
-
+import iniciosesion from './imagenes/inicio_sesion.png'
+import logo from './imagenes/logoo.png'
 
 function Iniciosesion() {
-
-    return (
+  return (
     <>
-    <div>
+   
+   
+    <div className="foto_inicial">
+      <div className="contenedor">
+      <div className='logo'>
+    <img src={logo} alt="Logo" />
+   </div>
+        <h1>Iniciar sesión</h1>
+        <form className='formulario'>
+          <input type="text" placeholder="Usuario" />
+          <div className="contrasena">
+            <input type="password" placeholder="Contraseña" />
+            <button type="submit">Iniciar sesión</button>
+          </div>
+        </form>
+      </div>
 
-       <h1>Iniciar sesión</h1>
-       <form>
-        
-       </form>
-
+      <div className="contenedor-imagen">
+        <img className="img_inicio" src={iniciosesion} alt="foto inicio" />
+      </div>
     </div>
-
     </>
-    )
+  )
+  
 }
 
 export default Iniciosesion
